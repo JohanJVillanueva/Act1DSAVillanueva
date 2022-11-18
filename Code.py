@@ -144,22 +144,22 @@ def DeleteContact():
         print("Given Entry number is not present in the list")
         start()
     else:
-        remove = entrynumber - 1
+        remove = entrynumber-1
 
-        print(addressbook[remove])
+
         addressbook.pop(remove)
 
-        # Removes 1 from the first index of the nested list, to reflect the deletion of an Entry
-        lengthofadd = len(addressbook) - entrynumber + 1
+        lengthofadd = len(addressbook) - entrynumber+1
         z = 0
         while z < lengthofadd:
-            addressbook[remove][0] = remove + 1
-            remove += 1
-            z += 1
+                addressbook[remove][0] = remove + 1
+                remove += 1
+                z+=1
 
-        # Prints out the whole addressbook, for user to access
+
         for k in addressbook:
-            print(k)
+                print(k)
+
 
         start()
 
